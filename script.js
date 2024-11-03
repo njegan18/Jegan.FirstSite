@@ -4,4 +4,8 @@ function orderNow() {
   window.location.href = "https://example.com/order"; // Replace with actual order link
 }
 
-//test checkin
+const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
